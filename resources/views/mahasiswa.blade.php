@@ -10,3 +10,5 @@
         </tr>
     @endforeach
 </table>
+
+<a href="{{ route('matakuliah') }}">Liat daftar matakuliah</a>

@@ -12,7 +12,7 @@ Route::get('/', function () {
 Route::get('/mahasiswa', function () {
     $data = Mahasiswa::all();
     return view('mahasiswa', compact('data'));
-});
+})->name('mahasiswa');
 
 Route::get('/matakuliah', function () {
     $data = Matakuliah::with('user')->get();

@@ -13,3 +13,4 @@
 </table>
 
 <a href="{{ route('matakuliah.add') }}">Tambahkan</a>
+<a href="{{ route('mahasiswa') }}">Liat daftar mahasiswa</a>
