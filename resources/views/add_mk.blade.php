@@ -7,7 +7,7 @@
         {{-- Kode / ID Mata Kuliah --}}
         <div class="mb-3">
             <label for="kode_mk" class="form-label">
-                ID / Kode Mata Kuliah
+                Kode Mata Kuliah
             </label>
 
             <input
