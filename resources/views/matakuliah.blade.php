@@ -1,4 +1,4 @@
-<h1>Daftar Matakuliah</h1>
+<h1>Daftar Mata Kuliah</h1>
     <table border="1" cellpadding="8">
         <tr><th>Kode Mata Kuliah</th><th>Dosen Pengampu</th><th>Nama Mata Kuliah</th><th>SKS</th><th>Semester</th></tr>
         @foreach ($data as $mk)
