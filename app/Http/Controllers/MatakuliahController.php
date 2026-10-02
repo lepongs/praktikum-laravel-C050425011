@@ -26,7 +26,22 @@ class MatakuliahController extends Controller
         Matakuliah::create($data);
 
         return redirect()
-            ->route('matakuliah')
+            ->route('matakuliah.index')
             ->with('success', 'Mata kuliah berhasil ditambahkan.');
-        } 
+        }
+        
+    public function index() {
+        // return "Halaman seluruh matakuliah";
+        $data = Matakuliah::with('user')->get();
+        return view('matakuliah', compact('data'));
+    }
+
+    public function create() {
+        $data = Matakuliah::with('user')->get();
+        return view('add_mk', compact('data'));
+    }
+
+    public function show(Matakuliah $matakuliah) {
+        return "Nama matakuliah dengan kode {$matakuliah->kode_mk} dan id {$matakuliah->id} : {$matakuliah->nama_mk}";
+    }
 }

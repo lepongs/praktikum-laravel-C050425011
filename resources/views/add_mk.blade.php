@@ -133,10 +133,10 @@
             >
                 <option value="">-- Pilih Dosen --</option>
 
-                @foreach ($data as $dosen)
+                @foreach ($data->unique('name') as $dosen)
                     <option
                         value="{{ $dosen->user->id }}"
-                        {{ old('id_dosen') == $dosen->id ? 'selected' : '' }}
+                        {{ old('id_dosen') == $dosen->user->id ? 'selected' : '' }}
                     >
                         {{ $dosen->user->name }}
                     </option>
@@ -154,7 +154,7 @@
             Simpan
         </button>
 
-        <a href="{{ route('matakuliah') }}" class="btn btn-secondary">
+        <a href="{{ route('matakuliah.index') }}" class="btn btn-secondary">
             Batal
         </a>
     </form>

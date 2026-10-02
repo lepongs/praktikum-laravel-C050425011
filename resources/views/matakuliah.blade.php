@@ -12,5 +12,5 @@
     @endforeach
 </table>
 
-<a href="{{ route('matakuliah.add') }}">Tambahkan</a>
+<a href="{{ route('matakuliah.create') }}">Tambahkan</a>
 <a href="{{ route('mahasiswa') }}">Liat daftar mahasiswa</a>

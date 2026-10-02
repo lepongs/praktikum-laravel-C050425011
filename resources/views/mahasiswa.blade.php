@@ -11,4 +11,4 @@
     @endforeach
 </table>
 
-<a href="{{ route('matakuliah') }}">Liat daftar matakuliah</a>
+<a href="{{ route('matakuliah.index') }}">Liat daftar matakuliah</a>
