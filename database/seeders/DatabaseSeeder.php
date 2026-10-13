@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call([
-            MatakuliahSeeder::class,
-        ]);
+        // $this->call([
+        //     MatakuliahSeeder::class,
+        // ]);
 
-        // Mahasiswa::factory(50)->create();
+        // Mahasiswa::factory(10)->create();
         
         // User::factory()->create([
         //     'name' => 'Arifin Noor Asyikin, ST, MT',

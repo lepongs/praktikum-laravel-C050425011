@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('judul', 'Menambahkan matakuliah baru')
+
+@section('konten')
 <div class="container">
     <h2>Tambah Mata Kuliah</h2>
 
@@ -158,5 +163,7 @@
             Batal
         </a>
     </form>
+    
 </div>
+@endsection
 
